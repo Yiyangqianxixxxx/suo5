@@ -58,9 +58,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: windows-latest
-            platform: windows/amd64
-            output: suo5-gui-windows.exe
           - os: macos-latest
             platform: darwin/universal
             # wails bug, mac 的 output file 不生效, 先用这个保证能用
